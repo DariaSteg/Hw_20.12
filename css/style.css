@@ -1,0 +1,101 @@
+:root {
+  font-family: 'Arapey', serif;
+  font-family: 'Roboto', sans-serif;
+
+  --padding-size: 10px;
+
+  font-size: 13px;
+  background-color: rgb(99 115 138);
+}
+body{
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+
+}
+h1:before, h1:after {
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  width: 30%;
+  height: 1px;
+  content: '1';
+  background-color: rgb(125, 120, 120);
+}
+h1:before {
+  margin-left: -30%;
+  text-align: right;
+}
+
+
+.wrapper{
+  justify-content: space-between;
+}
+.wrapper>input{
+  width: 40%;
+}
+
+form{
+  width: 350px;
+  margin: 40px auto 0 ;
+  background-color: rgb(242 243 247);
+  color: rgb(120, 118, 118);
+  border-radius: 3px;
+}
+
+fieldset,
+.btn-wrapper{
+  flex-direction: column;
+  text-align: center;
+}
+input, 
+button,
+label,
+legend{
+  padding: var(--padding-size);
+  margin: var(--padding-size);
+}
+::placeholder {
+  color: rgb(112, 112, 121);
+
+}
+
+button{
+  background:rgb(74 162 74);
+  border: none;
+  color:white;
+  border-radius: 3px;
+}
+.colortext{
+  color: rgb(74 162 74);
+  margin: 0 5px 0 ;
+}
+.hr{
+  flex-direction: column;
+  border-width: 3px
+}
+input,fieldset{
+  border: 1px solid rgb(209, 209, 224);
+}
+
+footer{
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+
+}
+.Sign_in{
+color: inherit;
+}
+.display_flex{
+  display: flex;
+}
+
